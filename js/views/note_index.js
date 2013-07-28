@@ -21,13 +21,13 @@
 
     addAll: function () {
       // clear out the container each time you render index
-      this.$el.find('tbody').children().remove();
+      this.$el.find('ul').children().remove();
       _.each(this.notes.models, $.proxy(this, 'addOne'));
     },
 
     addOne: function (note) {
       var view = new APP.Views.NoteRowView({notes: this.notes, note: note});
-      this.$el.find("tbody").append(view.render().el);
+      this.$el.find("ul").append(view.render().el);
     }
   });
 }());

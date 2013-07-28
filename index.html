@@ -74,29 +74,18 @@
     <div class="well">
       <a class="btn btn-block btn-large btn-info" href="#note/new">Create New Note</a>
     </div>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th width="20%">Title</th>
-          <th width="20%">Author</th>
-          <th>Description</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+      <ul class="list inset">
+  </ul>
   </script>
   <!-- the row template, renders once for each item in the index -->
   <script type="text/template" id="rowTemplate">
-    <td>
-      <a href="#note/<%= id %>/view"><%= title %></a>
-    </td>
-    <td><%= author %></td>
-    <td><% print(description.substring(0, 100)) %>...</td>
-    <td>
-      <a href="#" class="delete btn btn-danger btn-small">delete</a>
-    </td>
-  </script>
+    <li>
+    <a href="#note/<%= id %>/view">
+          <strong><%= title %></strong>
+          <span class="chevron"></span>
+        </a>
+         </li>
+      </script>
   <!-- the show template -->
   <script type="text/template" id="showTemplate">
     <div class="well">
