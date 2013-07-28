@@ -3,6 +3,7 @@
   window.APP = window.APP || {Routers: {}, Collections: {}, Models: {}, Views: {}};
   APP.Routers.NoteRouter = Backbone.Router.extend({
     routes: {
+    "":"index",
       "note/new": "create",
       "notes/index": "index",
       "note/:id/edit": "edit",
