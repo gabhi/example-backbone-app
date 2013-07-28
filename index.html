@@ -88,6 +88,15 @@
       </script>
   <!-- the show template -->
   <script type="text/template" id="showTemplate">
+    <header class="bar-title">
+   <a class="button-prev" href="#notes/index">
+    Index
+  </a>
+  <h1 class="title">  <%= title %></h1>
+  <a class="button-next" href="#note/<%= id %>/edit">
+    Edit Note
+  </a>
+  </header>
     <div class="well">
       <a class="btn btn-large" href="#notes/index">
         Back To Index
